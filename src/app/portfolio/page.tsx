@@ -32,7 +32,7 @@ export default function Portfolio() {
           title: 'GitHub',
         },
         {
-          href: 'https://whereabouts.demo.archiebiddiscombe.net',
+          href: 'https://whereabouts.archiebiddiscombe.net',
           title: 'Demo',
         },
       ],
@@ -49,7 +49,7 @@ export default function Portfolio() {
           title: 'GitHub',
         },
         {
-          href: 'https://countries.demo.archiebiddiscombe.net',
+          href: 'https://countries.archiebiddiscombe.net',
           title: 'Demo',
         },
       ],
