@@ -14,135 +14,60 @@ export default function Uses() {
 
       <div className='flex flex-wrap gap-4 sm:gap-2'>
         <Shield
-          img='https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=f7df1e'
-          href='https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript'
+          img='JavaScript'
           name='JavaScript'
+          href='https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript'
         />
-        <Shield
-          img='https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=ffffff'
-          href='https://www.typescriptlang.org/'
-          name='TypeScript'
-        />
-        <Shield
-          img='https://img.shields.io/badge/VS%20Code-204056?style=for-the-badge&logo=visualstudiocode&logoColor=ffffff'
-          href='https://code.visualstudio.com/'
-          name='VS Code'
-        />
-        <Shield
-          img='https://img.shields.io/badge/Docker-0db7ed?style=for-the-badge&logo=docker&logoColor=ffffff'
-          href='https://hub.docker.com/u/abiddiscombe'
-          name='Docker'
-        />
-        <Shield
-          img='https://img.shields.io/badge/Portainer%20CE-13BEF9?style=for-the-badge&logo=portainer&logoColor=ffffff'
-          href='https://www.portainer.io'
-          name='Portainer CE'
-        />
+        <Shield img='TypeScript' name='TypeScript' href='https://www.typescriptlang.org/' />
+        <Shield img='VSCode' name='VS Code' href='https://code.visualstudio.com/' />
+        <Shield img='Docker' name='Docker' href='https://hub.docker.com/u/abiddiscombe' />
+        <Shield img='PortainerCE' name='Portainer CE' href='https://www.portainer.io' />
       </div>
 
       <Typography variant='h2'>Code / Cloud</Typography>
 
       <div className='flex flex-wrap gap-4 sm:gap-2'>
-        <Shield
-          img='https://img.shields.io/badge/MS%20Azure-4285F4?style=for-the-badge&logo=microsoftazure&logoColor=ffffff'
-          href='https://azure.microsoft.com'
-          name='Microsoft Azure'
-        />
-        <Shield
-          img='https://img.shields.io/badge/Cloudflare-f38020?style=for-the-badge&logo=cloudflare&logoColor=ffffff'
-          href='https://www.cloudflare.com'
-          name='Cloudflare'
-        />
-        {/* <Shield
-          img='https://img.shields.io/badge/Render-46E3B7?style=for-the-badge&logo=render&logoColor=ffffff'
-          href='https://www.render.com'
-          name='Render'
-        /> */}
+        <Shield img='Cloudflare' name='Cloudflare' href='https://www.cloudflare.com' />
+        <Shield img='Render' name='Render' href='https://www.render.com' />
+        <Shield img='MSAzure' name='Microsoft Azure' href='https://azure.microsoft.com' />
       </div>
 
       <Typography variant='h2'>Code / Frontend</Typography>
 
       <div className='flex flex-wrap gap-4 sm:gap-2'>
+        <Shield img='React' name='React' href='https://react.dev' />
+        <Shield img='NextJS' name='NextJS' href='https://nextjs.org' />
+        <Shield img='Tailwind' name='TailwindCSS' href='https://tailwindcss.com/' />
+        <Shield img='Emotion' name='Emotion' href='https://emotion.sh/docs/introduction' />
+        <Shield img='Leaflet' name='Leaflet' href='https://leafletjs.com/' />
         <Shield
-          img='https://img.shields.io/badge/React-2196f3?style=for-the-badge&logo=react&logoColor=ffffff'
-          href='https://react.dev'
-          name='React'
-        />
-        <Shield
-          img='https://img.shields.io/badge/NextJS-000000?style=for-the-badge&logo=next.js&logoColor=ffffff'
-          href='https://nextjs.org'
-          name='NextJS'
-        />
-        <Shield
-          img='https://img.shields.io/badge/Tailwind-0ea5e9?style=for-the-badge&logo=tailwindcss&logoColor=ffffff'
-          href='https://tailwindcss.com/'
-          name='TailwindCSS'
-        />
-        <Shield
-          img='https://img.shields.io/badge/Emotion-b840bc?style=for-the-badge&logo=CSS3&logoColor=ffffff'
-          href='https://emotion.sh/docs/introduction'
-          name='Emotion'
-        />
-        <Shield
-          img='https://img.shields.io/badge/Leaflet-199900?style=for-the-badge&logo=leaflet&logoColor=ffffff'
-          href='https://leafletjs.com/'
-          name='Leaflet'
-        />
-        <Shield
-          img='https://img.shields.io/badge/MapLibre-3bb2d0?style=for-the-badge&logo=mapbox&logoColor=ffffff'
-          href='https://maplibre.org/maplibre-gl-js-docs/api/'
+          img='MapLibre'
           name='MapLibre GL JS'
+          href='https://maplibre.org/maplibre-gl-js-docs/api/'
         />
       </div>
 
       <Typography variant='h2'>Code / Backend</Typography>
 
       <div className='flex flex-wrap gap-4 sm:gap-2'>
-        <Shield
-          img='https://img.shields.io/badge/Deno-323330?style=for-the-badge&logo=deno&logoColor=ffffff'
-          href='https://deno.com'
-          name='Deno'
-        />
-        <Shield
-          img='https://img.shields.io/badge/Hono-000022?style=for-the-badge'
-          href='https://hono.dev'
-          name='Hono'
-        />
+        <Shield img='Deno' name='Deno' href='https://deno.com' />
+        <Shield img='Hono' name='Hono' href='https://hono.dev' />
+        <Shield img='Koa' name='KoaJS' href='https://koajs.com' />
       </div>
 
       <Typography variant='h2'>Code / Databases</Typography>
 
       <div className='flex flex-wrap gap-4 sm:gap-2'>
-        <Shield
-          img='https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=ffffff'
-          href='https://mongodb.com'
-          name='MongoDB'
-        />
-        <Shield
-          img='https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=ffffff'
-          href='https://postgresql.org'
-          name='PostgreSQL'
-        />
+        <Shield img='MongoDB' name='MongoDB' href='https://mongodb.com' />
+        <Shield img='PostgreSQL' name='PostgreSQL' href='https://postgresql.org' />
       </div>
 
       <Typography variant='h2'>Productivity</Typography>
 
       <div className='flex flex-wrap gap-4 sm:gap-2'>
-        <Shield
-          img='https://img.shields.io/badge/Obsidian-483699?style=for-the-badge&logo=obsidian&logoColor=ffffff'
-          href='https://obsidian.md'
-          name='Obsidian'
-        />
-        <Shield
-          img='https://img.shields.io/badge/PiHole-96060C?style=for-the-badge&logo=pihole&logoColor=ffffff'
-          href='https://pi-hole.net'
-          name='PiHole'
-        />
-        <Shield
-          img='https://img.shields.io/badge/Bitwarden-175DDC?style=for-the-badge&logo=bitwarden&logoColor=ffffff'
-          href='https://bitwarden.com'
-          name='Bitwarden'
-        />
+        <Shield img='Obsidian' name='Obsidian' href='https://obsidian.md' />
+        <Shield img='PiHole' name='Pi-Hole' href='https://pi-hole.net' />
+        <Shield img='Bitwarden' name='Bitwarden' href='https://bitwarden.com' />
       </div>
     </section>
   );
