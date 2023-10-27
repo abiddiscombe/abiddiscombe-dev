@@ -8,6 +8,8 @@ This is the code for [abiddiscombe.dev](https://abiddiscombe.dev). It's built wi
 - [TailwindCSS](https://tailwindcss.com)
 - [Bootstrap Icons](https://icons.getbootstrap.com)
 
+A changelog is provided in [CHANGES.md](./CHANGES.md).
+
 ## Developer Notes
 
 - To run the site locally: `npm run dev`.
@@ -15,9 +17,3 @@ This is the code for [abiddiscombe.dev](https://abiddiscombe.dev). It's built wi
 - To format the code with Prettier: `npm run tidy`.
 
 This site is built with NextJS' [Static Export](https://nextjs.org/docs/app/building-your-application/deploying/static-exports) option.
-
-## Outstanding Tasks
-
-- [ ] Add detailed textual descriptions to `/tools`.
-- [ ] Migrate responsive images to use `<picture>` element.
-- [ ] Migrate shield SVGs to repo folder (no `shields.io` fetching).

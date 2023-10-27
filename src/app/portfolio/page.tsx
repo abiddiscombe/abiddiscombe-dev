@@ -1,5 +1,6 @@
 import { Typography } from '@/components/Typography';
 import { PortfolioCard } from '@/components/PortfolioCard';
+import { BannerAlert } from '@/components/BannerAlert';
 
 export default function Portfolio() {
   const projects = [
@@ -32,7 +33,7 @@ export default function Portfolio() {
           title: 'GitHub',
         },
         {
-          href: 'https://whereabouts.demo.archiebiddiscombe.net',
+          href: 'https://whereabouts.archiebiddiscombe.net',
           title: 'Demo',
         },
       ],
@@ -49,7 +50,7 @@ export default function Portfolio() {
           title: 'GitHub',
         },
         {
-          href: 'https://countries.demo.archiebiddiscombe.net',
+          href: 'https://countries.archiebiddiscombe.net',
           title: 'Demo',
         },
       ],
@@ -90,6 +91,9 @@ export default function Portfolio() {
       <Typography variant='body'>
         Here&apos;s a list of public things I&apos;ve been working on recently.
       </Typography>
+      <BannerAlert variant='info'>
+        To reduce costs, some demo apps are spun-up on demand and will be subject to cold starts.
+      </BannerAlert>
       <div className='my-4 grid gap-4 grid-cols-1 xs:grid-cols-2 sm:grid-cols-3'>
         {projects.map((project) => (
           <PortfolioCard
