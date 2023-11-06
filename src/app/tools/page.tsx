@@ -29,7 +29,7 @@ export default function Uses() {
         <Shield img='Render' name='Render' href='https://www.render.com' />
         <Shield img='Docker' name='Docker' href='https://hub.docker.com/u/abiddiscombe' />
         <Shield img='PortainerCE' name='Portainer CE' href='https://www.portainer.io' />
-        <Shield img='Proxmox' name='Proxmox' href='https://www.proxmox.com/en/proxmox-virtual-environment/overview' />
+        <Shield img='Proxmox' name='Proxmox' href='https://www.proxmox.com' />
         <Shield img='MSAzure' name='Microsoft Azure' href='https://azure.microsoft.com' />
       </div>
 
