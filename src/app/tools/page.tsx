@@ -20,15 +20,16 @@ export default function Uses() {
         />
         <Shield img='TypeScript' name='TypeScript' href='https://www.typescriptlang.org/' />
         <Shield img='VSCode' name='VS Code' href='https://code.visualstudio.com/' />
-        <Shield img='Docker' name='Docker' href='https://hub.docker.com/u/abiddiscombe' />
-        <Shield img='PortainerCE' name='Portainer CE' href='https://www.portainer.io' />
       </div>
 
-      <Typography variant='h2'>Code / Cloud</Typography>
+      <Typography variant='h2'>Code / Infra</Typography>
 
       <div className='flex flex-wrap gap-4 sm:gap-2'>
         <Shield img='Cloudflare' name='Cloudflare' href='https://www.cloudflare.com' />
         <Shield img='Render' name='Render' href='https://www.render.com' />
+        <Shield img='Docker' name='Docker' href='https://hub.docker.com/u/abiddiscombe' />
+        <Shield img='PortainerCE' name='Portainer CE' href='https://www.portainer.io' />
+        <Shield img='Proxmox' name='Proxmox' href='https://www.proxmox.com' />
         <Shield img='MSAzure' name='Microsoft Azure' href='https://azure.microsoft.com' />
       </div>
 

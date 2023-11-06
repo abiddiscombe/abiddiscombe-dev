@@ -1,5 +1,6 @@
 import { Typography } from '@/components/Typography';
 import { ExternalLink } from '@/components/ExternalLink';
+import { InternalLink } from '@/components/InternalLink';
 
 export default function Home() {
   return (
@@ -24,10 +25,10 @@ export default function Home() {
       </Typography>
 
       <Typography variant='body'>
-        My tech stack is focused on JavaScript and TypeScript. I mostly use NodeJS and React for
-        frontend work though I prefer to use Deno to build REST APIs and microservices. I&apos;m
-        often exploring new technologies (especially those with a geospatial theme) and different
-        ways of doing things by code.
+        My <InternalLink href='./tools' message='tech stack' /> is focused on JavaScript and
+        TypeScript. I mostly use NodeJS and React for frontend work though I prefer to use Deno to
+        build REST APIs and microservices. I&apos;m often exploring new technologies (especially
+        those with a geospatial theme) and different ways of doing things by code.
       </Typography>
 
       <Typography variant='body'>
