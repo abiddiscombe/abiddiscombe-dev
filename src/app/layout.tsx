@@ -18,7 +18,6 @@ export default function RootLayout(p: RootLayoutProps) {
   return (
     <html lang='en'>
       <head>
-        <meta name='theme-color' content='#222' />
         <meta property='og:type' content='website' />
         <meta property='og:url' content='https://abiddiscombe.dev/' />
         <meta property='og:title' content="Archie Biddiscombe's Site" />
