@@ -7,7 +7,8 @@ import { ExternalLink } from '@/components/ExternalLink';
 
 export const metadata: Metadata = {
   title: 'Archie Biddiscombe',
-  description: 'Archie is an Associate Software Engineer with a specialism in geospatial.',
+  description:
+    'Archie is an Associate Software Engineer with a specialism in geospatial technologies.',
 };
 
 interface RootLayoutProps {
