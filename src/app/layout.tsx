@@ -7,7 +7,8 @@ import { ExternalLink } from '@/components/ExternalLink';
 
 export const metadata: Metadata = {
   title: 'Archie Biddiscombe',
-  description: 'Archie is an Associate Software Engineer with a specialism in geospatial.',
+  description:
+    'Archie is an Associate Software Engineer with a specialism in geospatial technologies.',
 };
 
 interface RootLayoutProps {
@@ -18,7 +19,6 @@ export default function RootLayout(p: RootLayoutProps) {
   return (
     <html lang='en'>
       <head>
-        <meta name='theme-color' content='#222' />
         <meta property='og:type' content='website' />
         <meta property='og:url' content='https://abiddiscombe.dev/' />
         <meta property='og:title' content="Archie Biddiscombe's Site" />
@@ -39,10 +39,11 @@ export default function RootLayout(p: RootLayoutProps) {
             </Link>
           </Typography>
 
-          <nav className='flex items-center gap-4'>
+          <nav className='flex items-center gap-5 md:gap-4'>
             <SocialLink type='email' />
             <SocialLink type='github' />
             <SocialLink type='linkedin' />
+            <SocialLink type='literature' />
           </nav>
         </header>
 

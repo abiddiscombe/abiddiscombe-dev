@@ -1,6 +1,14 @@
 # Changelog
 
-## 2.0.0 - November 2032
+## 2.1.0 - November 2023
+
+1. fix: remove legacy browser theme value
+2. chore?: amend site description
+3. feat: add literature social icon
+4. fix: larger social icons on mobile screens
+5. docs: update CHANGES.md
+
+## 2.0.0 - November 2023
 
 1. feat!: new design and copy
 
