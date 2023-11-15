@@ -1,7 +1,6 @@
 'use client';
 import { useSearchParams } from 'next/navigation';
 import { Typography } from '@/components/Typography';
-import { CodeSnippet } from '@/components/CodeSnippet';
 
 export default function Restricted() {
   const sParams = useSearchParams();
@@ -20,7 +19,7 @@ export default function Restricted() {
       {ref && (
         <>
           <Typography variant='body'>The service reported the following metadata:</Typography>
-          <CodeSnippet>{ref}</CodeSnippet>
+          <code>{ref}</code>
         </>
       )}
     </section>
