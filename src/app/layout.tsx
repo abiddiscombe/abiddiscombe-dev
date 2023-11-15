@@ -43,6 +43,7 @@ export default function RootLayout(p: RootLayoutProps) {
             <SocialLink type='email' />
             <SocialLink type='github' />
             <SocialLink type='linkedin' />
+            <SocialLink type='literature' />
           </nav>
         </header>
 
