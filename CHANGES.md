@@ -1,6 +1,11 @@
 # Changelog
 
+## 2.0.0 - November 2032
+
+1. feat!: new design and copy
+
 ## 1.2.0 - November 2023
+
 0. (HOTFIX) fix: disparity between header and footer bg values
 1. feat: InternalLink and new home link to /tools
 2. feat!: proxmox and refactored /tools list

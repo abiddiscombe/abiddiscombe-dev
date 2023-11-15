@@ -1,11 +1,13 @@
-import type { Metadata } from 'next';
 import './globals.css';
-import { Header } from '@/components/Header/Header';
-import { NavBar } from '@/components/NavBar/NavBar';
-import { Footer } from '@/components/Footer/Footer';
+import Link from 'next/link';
+import type { Metadata } from 'next';
+import { Typography } from '@/components/Typography';
+import { SocialLink } from '@/components/SocialLink';
+import { ExternalLink } from '@/components/ExternalLink';
 
 export const metadata: Metadata = {
   title: 'Archie Biddiscombe',
+  description: 'Archie is an Associate Software Engineer with a specialism in geospatial.',
 };
 
 interface RootLayoutProps {
@@ -13,32 +15,48 @@ interface RootLayoutProps {
 }
 
 export default function RootLayout(p: RootLayoutProps) {
-  const metaDescription =
-    'Archie is an Associate Software Engineer with a specialism in geospatial.';
   return (
     <html lang='en'>
       <head>
         <meta name='theme-color' content='#222' />
-        <meta name='description' content={metaDescription} />
         <meta property='og:type' content='website' />
         <meta property='og:url' content='https://abiddiscombe.dev/' />
         <meta property='og:title' content="Archie Biddiscombe's Site" />
-        <meta property='og:description' content={metaDescription} />
+        <meta property='og:description' content={metadata.description || ''} />
         <meta property='og:image' content='./media/archie.png' />
         <link rel='icon' href='./favicon/favicon.ico' />
         <link rel='icon' type='image/png' sizes='32x32' href='./favicon/favicon-32x32.png' />
         <link rel='icon' type='image/png' sizes='16x16' href='./favicon/favicon-16x16.png' />
       </head>
 
-      <body className='overflow-y-scroll text-zinc-700 dark:text-zinc-200 dark:bg-zinc-800 h-screen grid grid-rows-[auto,_auto,_1fr,_auto]'>
-        <Header />
-        <NavBar />
+      <body className='px-8 mx-auto max-w-3xl h-screen grid grid-rows-[auto,_1fr,_auto]'>
+        <header className='pb-8 md:pb-4 pt-10 md:pt-24 flex items-center justify-between'>
+          <Typography variant='h1'>
+            <Link href='./'>
+              Archie
+              <br />
+              <span className='text-frontDimmed-light dark:text-frontDimmed-dark'>Biddiscombe</span>
+            </Link>
+          </Typography>
 
-        <main className='p-8 pt-2'>
-          <div className='mx-auto max-w-2xl'>{p.children}</div>
-        </main>
+          <nav className='flex items-center gap-4'>
+            <SocialLink type='email' />
+            <SocialLink type='github' />
+            <SocialLink type='linkedin' />
+          </nav>
+        </header>
 
-        <Footer />
+        <main className='py-2'>{p.children}</main>
+
+        <footer className='pt-12 pb-8 flex flex-wrap gap-2 items-center justify-between text-frontDimmed-light dark:text-frontDimmed-dark '>
+          <small>&copy; Archie Biddiscombe</small>
+          <small>
+            <ExternalLink
+              href='https://github.com/abiddiscombe/abiddiscombe-dev'
+              message='View Source'
+            />
+          </small>
+        </footer>
       </body>
     </html>
   );

@@ -3,10 +3,12 @@
 This is the code for [abiddiscombe.dev](https://abiddiscombe.dev). It's built with:
 
 - [NextJS](https://nextjs.org)
-- [Shields.io](https://shields.io)
 - [Favicon.io](https://favicon.io)
 - [TailwindCSS](https://tailwindcss.com)
-- [Bootstrap Icons](https://icons.getbootstrap.com)
+- [Feather Icons](https://feathericons.com/)
+- [Google Fonts (Raleway)](https://fonts.google.com/specimen/Raleway)
+
+This project was inspired by [paco.me](https://paco.me) and [taniarascia.com](https://taniarascia.com).
 
 A changelog is provided in [CHANGES.md](./CHANGES.md).
 
