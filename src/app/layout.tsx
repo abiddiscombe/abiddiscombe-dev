@@ -39,7 +39,7 @@ export default function RootLayout(p: RootLayoutProps) {
             </Link>
           </Typography>
 
-          <nav className='flex items-center gap-4'>
+          <nav className='flex items-center gap-5 md:gap-4'>
             <SocialLink type='email' />
             <SocialLink type='github' />
             <SocialLink type='linkedin' />
