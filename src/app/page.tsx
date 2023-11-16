@@ -6,19 +6,19 @@ export default function Home() {
     {
       name: 'Deno Finder',
       href: 'https://finder.deno.dev',
-      summary: (
-        <>A public utility for identifying one&apos;s nearest Deno Deploy edge compute region.</>
-      ),
+      summary: <>A utility for identifying one&apos;s nearest Deno Deploy edge compute region.</>,
     },
     {
       name: 'Whereabouts',
       href: 'https://github.com/abiddiscombe/whereabouts',
-      summary: <>A Bring-Your-Own-Dataset geospatial point feature API with textual search.</>,
+      summary: <>A Bring-Your-Own-Data Geospatial Point Feature API with textual search.</>,
     },
     {
       name: 'OS Data Hub JS SDK',
       href: 'https://github.com/OrdnanceSurvey/osdatahub-js',
-      summary: <>A JavaScript package making Ordnance Survey APIs accessible to developers.</>,
+      summary: (
+        <>A JavaScript SDK for Ordnance Survey APIs, making them accessible to developers.</>
+      ),
     },
     {
       name: 'Postman GeoJSON',
@@ -28,41 +28,48 @@ export default function Home() {
     {
       name: 'Countries API',
       href: 'https://github.com/abiddiscombe/countries',
-      summary: <>An API for returning country metadata, ISO codes and geometry. Archived.</>,
+      summary: (
+        <>
+          {' '}
+          An API for returning country metadata and geometry. <em>Archived.</em>
+        </>
+      ),
     },
   ];
 
   return (
     <>
       <Typography variant='body'>
-        I&apos;m an Associate Software Engineer, currently working at{' '}
-        <ExternalLink href='https://www.ordnancesurvey.co.uk' message='Ordnance Survey' /> where I
-        help to build APIs and web solutions which in turn underpin critical national services.
+        Hi there! I&apos;m an Associate Software Engineer currently working at{' '}
+        <ExternalLink href='https://www.ordnancesurvey.co.uk' message='Ordnance Survey' />, where I
+        help to build APIs and web solutions that underpin critical national services.
       </Typography>
 
       <Typography variant='body'>
-        I use <ExternalLink href='https://react.dev' message='React' />,{' '}
-        <ExternalLink href='https://nextjs.org' message='NextJS' />,{' '}
+        <em className='pr-4'>I&apos;m currently exploring:</em>{' '}
+        <ExternalLink href='https://react.dev' message='React' />,{' '}
         <ExternalLink href='https://tailwindcss.com/' message='Tailwind' />, and{' '}
         <ExternalLink href='https://emotion.sh/docs/introduction' message='Emotion' /> on the
-        frontend, and <ExternalLink href='https://deno.com' message='Deno' />,{' '}
-        <ExternalLink href='https://hono.dev' message='Hono' />, and{' '}
-        <ExternalLink href='https://hub.docker.com/u/abiddiscombe' message='Docker' /> to build REST
-        APIs which talk to <ExternalLink href='https://mongodb.com' message='MongoDB' /> and{' '}
-        <ExternalLink href='https://postgresql.org' message='Postgres' />. I&apos;m currently
-        deploying to <ExternalLink href='https://www.render.com' message='Render' />,{' '}
-        <ExternalLink href='https://www.cloudflare.com' message='Cloudflare' />,{' '}
-        <ExternalLink href='https://azure.microsoft.com' message='Azure' />, or my home server. My
-        creativity is fueled by a mix of coffee and Spotify playlists.
+        frontend, alongside geo utils such as{' '}
+        <ExternalLink href='https://maplibre.org/maplibre-gl-js/docs/' message='MapLibre' /> and{' '}
+        <ExternalLink href='https://turfjs.org/' message='Turf' />. I&apos;m often using{' '}
+        <ExternalLink href='https://deno.com' message='Deno' /> and{' '}
+        <ExternalLink href='https://hono.dev' message='Hono' /> to build APIs and backend things
+        connected to <ExternalLink href='https://mongodb.com' message='MongoDB' /> and{' '}
+        <ExternalLink href='https://postgresql.org' message='Postgres' />. I usually deploy with{' '}
+        <ExternalLink href='https://hub.docker.com/u/abiddiscombe' message='Docker' /> to{' '}
+        <ExternalLink href='https://www.render.com' message='Render' />,{' '}
+        <ExternalLink href='https://azure.microsoft.com' message='Azure' />, or my home server.
       </Typography>
 
       <Typography variant='body'>
-        Away from the desk, I love cooking and exploring new places. I have a BSc in Geography from{' '}
+        <em className='pr-4'>Away from the desk:</em> I love cooking and exploring new places. I
+        have a BSc in Geography from{' '}
         <ExternalLink
           href='https://www.durham.ac.uk/departments/academic/geography/'
           message='Durham University'
         />{' '}
-        where I specialised in GIS, Climate Change, and Glaciology.
+        where I specialised in GIS and Glaciology.
       </Typography>
 
       <Typography variant='h2'>Recent Projects</Typography>
