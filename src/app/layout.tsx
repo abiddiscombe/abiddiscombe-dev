@@ -23,7 +23,6 @@ export default function RootLayout(p: RootLayoutProps) {
         <meta property='og:url' content='https://abiddiscombe.dev/' />
         <meta property='og:title' content="Archie Biddiscombe's Site" />
         <meta property='og:description' content={metadata.description || ''} />
-        <meta property='og:image' content='./media/archie.png' />
         <link rel='icon' href='./favicon/favicon.ico' />
         <link rel='icon' type='image/png' sizes='32x32' href='./favicon/favicon-32x32.png' />
         <link rel='icon' type='image/png' sizes='16x16' href='./favicon/favicon-16x16.png' />
