@@ -1,5 +1,13 @@
 # Changelog
 
+## 2.2.0 - November 2023
+
+1. refactor!: style and typography improvements
+2. fix: remove legacy social thumbnail
+3. feat: text content updates
+4. fix: header pb value
+5. docs: update CHANGES.md
+
 ## 2.1.0 - November 2023
 
 1. fix: remove legacy browser theme value
