@@ -16,13 +16,17 @@ const config: Config = {
         dark: "#1a1a1a",
         light: "#fafafa",
       },
-      front: {
+      font: {
         dark: "#e5e5e5",
         light: "#3a3a3a",
       },
-      frontDimmed: {
+      fontLighter: {
         dark: "#a0a0a0",
         light: "#6f6f6f",
+      },
+      fontLightest: {
+        dark: "#494949",
+        light: "#bbbbbb",
       },
     },
   },

@@ -67,7 +67,7 @@ export default function Home() {
 
       <Typography variant='h2'>Recent Projects</Typography>
 
-      <div className='my-3 grid gap-3 grid-cols-1 sm:grid-cols-3'>
+      <div className='my-3 grid gap-5 grid-cols-1 sm:grid-cols-3'>
         {projects.map((project) => (
           <article key={project.href}>
             <Typography variant='h3'>

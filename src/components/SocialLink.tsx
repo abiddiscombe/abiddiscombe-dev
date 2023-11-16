@@ -9,7 +9,7 @@ export function SocialLink(p: SocialLinkProps) {
   const literature = 'https://github.com/abiddiscombe/literature';
 
   const genericClasses =
-    'text-frontDimmed-light dark:text-frontDimmed-dark hover:text-front-light dark:hover:text-front-dark';
+    'text-fontLighter-light dark:text-fontLighter-dark hover:text-font-light dark:hover:text-font-dark';
 
   switch (p.type) {
     case 'email':
@@ -114,7 +114,7 @@ function LiteratureIcon() {
       viewBox='0 0 24 24'
       fill='none'
       stroke='currentColor'
-      stroke-width='2'
+      strokeWidth='2'
       strokeLinecap='round'
       strokeLinejoin='round'
       className='feather feather-book h-6 md:h-5'
