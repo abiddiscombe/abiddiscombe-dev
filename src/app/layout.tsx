@@ -30,7 +30,7 @@ export default function RootLayout(p: RootLayoutProps) {
 
       <body className='h-screen grid grid-rows-[auto,_1fr,_auto]'>
         <header className='px-8'>
-          <div className='mx-auto max-w-3xl pb-6 pt-10 md:pt-24 xl:pt-28 flex items-center justify-between'>
+          <div className='mx-auto max-w-3xl pb-8 pt-10 md:pt-24 xl:pt-28 flex items-center justify-between'>
             <Typography variant='h1'>
               <Link href='./'>
                 Archie
