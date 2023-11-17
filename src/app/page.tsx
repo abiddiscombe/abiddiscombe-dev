@@ -23,7 +23,7 @@ export default function Home() {
     {
       name: 'Postman GeoJSON',
       href: 'https://github.com/OrdnanceSurvey/PostmanGeoJSON',
-      summary: <>A Leaflet-based GeoJSON map plugin for Postman&apos;s Visualizer tool.</>,
+      summary: <>A map (via Leaflet) GeoJSON response plugin for Postman&apos;s Visualizer tool.</>,
     },
     {
       name: 'Countries API',
@@ -46,18 +46,19 @@ export default function Home() {
       </Typography>
 
       <Typography variant='body'>
-        <em className='pr-4'>I&apos;m currently exploring:</em>{' '}
+        <em className='pr-4'>Currently practising:</em>{' '}
         <ExternalLink href='https://react.dev' message='React' />,{' '}
         <ExternalLink href='https://tailwindcss.com/' message='Tailwind' />, and{' '}
         <ExternalLink href='https://emotion.sh/docs/introduction' message='Emotion' /> on the
         frontend, alongside geo utils such as{' '}
         <ExternalLink href='https://maplibre.org/maplibre-gl-js/docs/' message='MapLibre' /> and{' '}
-        <ExternalLink href='https://turfjs.org/' message='Turf' />. I&apos;m often using{' '}
-        <ExternalLink href='https://deno.com' message='Deno' /> and{' '}
-        <ExternalLink href='https://hono.dev' message='Hono' /> to build APIs and backend things
-        connected to <ExternalLink href='https://mongodb.com' message='MongoDB' /> and{' '}
-        <ExternalLink href='https://postgresql.org' message='Postgres' />. I usually deploy with{' '}
-        <ExternalLink href='https://hub.docker.com/u/abiddiscombe' message='Docker' /> to{' '}
+        <ExternalLink href='https://turfjs.org/' message='Turf' />. For APIs and backend things
+        I&apos;m mostly using{' '}
+        <ExternalLink href='https://hub.docker.com/u/abiddiscombe' message='Docker' />,{' '}
+        <ExternalLink href='https://deno.com' message='Deno' />, and{' '}
+        <ExternalLink href='https://hono.dev' message='Hono' />, alongside{' '}
+        <ExternalLink href='https://mongodb.com' message='MongoDB' /> or{' '}
+        <ExternalLink href='https://postgresql.org' message='Postgres' />. I usually deploy to{' '}
         <ExternalLink href='https://www.render.com' message='Render' />,{' '}
         <ExternalLink href='https://azure.microsoft.com' message='Azure' />, or my home server.
       </Typography>

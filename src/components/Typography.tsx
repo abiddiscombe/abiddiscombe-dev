@@ -16,7 +16,15 @@ export function Typography(p: TypographyProps) {
       return <h2 className='pt-4 pb-2 tracking-wider font-semibold'>{p.children}</h2>;
 
     case 'h3':
-      return <h3 className='tracking-wide leading-relaxed font-semibold'>{p.children}</h3>;
+      return (
+        <h3
+          className={
+            "tracking-wide leading-relaxed font-semibold after:text-xs after:text-fontLightest-light after:pl-1 dark:after:text-fontLightest-dark hover:after:text-fontLighter-light hover:dark:after:text-fontLighter-dark after:content-['_↗']"
+          }
+        >
+          {p.children}
+        </h3>
+      );
 
     case 'body':
       return <p className='pb-6 tracking-wide leading-relaxed font-normal'>{p.children}</p>;
