@@ -1,5 +1,17 @@
 # Changelog
 
+## 2.2.2 - November 2023
+
+1. fix: project link icon (wip) **
+2. fix: accessibility in social link
+3: docs: update CHANGES.md
+
+** this is a WIP commit, further adjustments might be required.
+
+## 2.2.1 - November 2023
+
+1. fix: typography / grammar issues
+
 ## 2.2.0 - November 2023
 
 1. refactor!: style and typography improvements
