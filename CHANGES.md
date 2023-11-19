@@ -1,12 +1,19 @@
 # Changelog
 
+## 2.3.0 - November 2023
+
+1. feat: improve project link interactivity
+2. fix: WCAG footer violations
+3. feat: contour background
+4. docs: update CHANGES.md
+
 ## 2.2.2 - November 2023
 
-1. fix: project link icon (wip) **
+1. fix: project link icon (wip) \*\*
 2. fix: accessibility in social link
-3: docs: update CHANGES.md
+3. docs: update CHANGES.md
 
-** this is a WIP commit, further adjustments might be required.
+\*\* this is a WIP commit, further adjustments might be required.
 
 ## 2.2.1 - November 2023
 
