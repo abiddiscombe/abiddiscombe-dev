@@ -56,10 +56,10 @@ export default function RootLayout(p: RootLayoutProps) {
 
         <footer className='px-8'>
           <div className='mx-auto max-w-3xl pt-12 pb-8 flex flex-wrap gap-2 items-center justify-between'>
-            <small className='text-fontLightest-light dark:text-fontLightest-dark'>
+            <small className='text-fontLighter-light dark:text-fontLighter-dark'>
               &copy; Archie Biddiscombe
             </small>
-            <small className='text-fontLightest-light dark:text-fontLightest-dark'>
+            <small className='text-fontLighter-light dark:text-fontLighter-dark'>
               <ExternalLink
                 href='https://github.com/abiddiscombe/abiddiscombe-dev'
                 message='View Source'
