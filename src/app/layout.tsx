@@ -28,7 +28,7 @@ export default function RootLayout(p: RootLayoutProps) {
         <link rel='icon' type='image/png' sizes='16x16' href='./favicon/favicon-16x16.png' />
       </head>
 
-      <body className='h-screen grid grid-rows-[auto,_1fr,_auto]'>
+      <body className='min-h-screen bg-gradient-to-b from-back-light/10 to-back-light dark:from-back-dark/20 dark:to-back-dark'>
         <header className='px-8'>
           <div className='mx-auto max-w-3xl pb-8 pt-10 md:pt-24 xl:pt-28 flex items-center justify-between'>
             <Typography variant='h1'>
@@ -55,15 +55,9 @@ export default function RootLayout(p: RootLayoutProps) {
         </main>
 
         <footer className='px-8'>
-          <div className='mx-auto max-w-3xl pt-12 pb-8 flex flex-wrap gap-2 items-center justify-between'>
+          <div className='mx-auto max-w-3xl pt-12 pb-8'>
             <small className='text-fontLighter-light dark:text-fontLighter-dark'>
               &copy; Archie Biddiscombe
-            </small>
-            <small className='text-fontLighter-light dark:text-fontLighter-dark'>
-              <ExternalLink
-                href='https://github.com/abiddiscombe/abiddiscombe-dev'
-                message='View Source'
-              />
             </small>
           </div>
         </footer>
