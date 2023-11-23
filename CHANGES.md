@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.4.0 - November 2023
+
+1. fix: project link font weight change on hover
+
 ## 2.3.0 - November 2023
 
 1. feat: improve project link interactivity

@@ -18,7 +18,7 @@ export function Typography(p: TypographyProps) {
     case 'h3':
       return (
         <h3 className={'flex items-center tracking-wider leading-relaxed font-normal'}>
-          <span className='mr-1 hover:mr-2 hover:font-semibold duration-200'>{p.children}</span>
+          <span className='mr-1 hover:mr-2 duration-200'>{p.children}</span>
           <ProjectLinkIcon />
         </h3>
       );
