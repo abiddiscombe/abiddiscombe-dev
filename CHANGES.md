@@ -1,5 +1,17 @@
 # Changelog
 
+## 2.4.0 - November 2023
+
+1. fix: project link font weight change on hover
+2. feat!: gradient background for contours and remove source link
+3. feat!: gradient background for contours and remove source link 2
+4. feat!: add new literature section and refactor of layout blocks
+5. fix: fix scrollbar visibility to prevent leftwards shift of content
+6. feat: project cards on homepage and dynamic gradient borders
+7. fix: increase social link icon size
+8. fix: update literature copy
+9. fix: update literature copy 2
+
 ## 2.3.0 - November 2023
 
 1. feat: improve project link interactivity

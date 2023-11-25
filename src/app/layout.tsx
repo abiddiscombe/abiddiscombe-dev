@@ -1,9 +1,8 @@
 import './globals.css';
-import Link from 'next/link';
 import type { Metadata } from 'next';
-import { Typography } from '@/components/Typography';
-import { SocialLink } from '@/components/SocialLink';
-import { ExternalLink } from '@/components/ExternalLink';
+import { Header } from '@/components/blocks/Header';
+import { Footer } from '@/components/blocks/Footer';
+import { Navigation } from '@/components/blocks/Navigation';
 
 export const metadata: Metadata = {
   title: 'Archie Biddiscombe',
@@ -28,45 +27,13 @@ export default function RootLayout(p: RootLayoutProps) {
         <link rel='icon' type='image/png' sizes='16x16' href='./favicon/favicon-16x16.png' />
       </head>
 
-      <body className='h-screen grid grid-rows-[auto,_1fr,_auto]'>
-        <header className='px-8'>
-          <div className='mx-auto max-w-3xl pb-8 pt-10 md:pt-24 xl:pt-28 flex items-center justify-between'>
-            <Typography variant='h1'>
-              <Link href='./'>
-                Archie
-                <br />
-                <span className='text-fontLighter-light dark:text-fontDimmed-dark'>
-                  Biddiscombe
-                </span>
-              </Link>
-            </Typography>
-
-            <nav className='flex items-center gap-5 md:gap-4'>
-              <SocialLink type='email' />
-              <SocialLink type='github' />
-              <SocialLink type='linkedin' />
-              <SocialLink type='literature' />
-            </nav>
-          </div>
-        </header>
-
+      <body className='min-h-screen md:overflow-y-scroll bg-gradient-to-b from-back-light/40 to-back-light dark:from-back-dark/30 dark:to-back-dark'>
+        <Header />
+        <Navigation />
         <main className='px-8'>
           <div className='mx-auto max-w-3xl'>{p.children}</div>
         </main>
-
-        <footer className='px-8'>
-          <div className='mx-auto max-w-3xl pt-12 pb-8 flex flex-wrap gap-2 items-center justify-between'>
-            <small className='text-fontLighter-light dark:text-fontLighter-dark'>
-              &copy; Archie Biddiscombe
-            </small>
-            <small className='text-fontLighter-light dark:text-fontLighter-dark'>
-              <ExternalLink
-                href='https://github.com/abiddiscombe/abiddiscombe-dev'
-                message='View Source'
-              />
-            </small>
-          </div>
-        </footer>
+        <Footer />
       </body>
     </html>
   );
