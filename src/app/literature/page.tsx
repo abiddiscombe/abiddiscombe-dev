@@ -100,14 +100,16 @@ interface LiteratureCardProps {
 
 function LiteratureCard(p: LiteratureCardProps) {
   return (
-    <article className='p-4 mb-4 bg-back-light dark:bg-back-dark shadow-sm hover:shadow rounded border border-fontLightest-light dark:border-fontLightest-dark'>
-      <Typography variant='h3'>
-        <ExternalLink href={p.href} message={p.title} />
-      </Typography>
-      <p className='text-sm text-fontLighter-light dark:text-fontLighter-dark'>
-        {p.author}
-        {p.date && ` (${p.date})`}. {p.format && <i>{p.format}.</i>}
-      </p>
-    </article>
+    <div className='mb-4 p-[1px] shadow-sm hover:shadow rounded bg-fontLightest-light dark:bg-fontLightest-dark hover:bg-gradient-to-tr from-[#E55D87] to-[#5FC3E4]'>
+      <article className='p-4 bg-back-light dark:bg-back-dark rounded'>
+        <Typography variant='h3'>
+          <ExternalLink href={p.href} message={p.title} />
+        </Typography>
+        <p className='text-sm text-fontLighter-light dark:text-fontLighter-dark'>
+          {p.author}
+          {p.date && ` (${p.date})`}. {p.format && <i>{p.format}.</i>}
+        </p>
+      </article>
+    </div>
   );
 }

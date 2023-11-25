@@ -28,12 +28,7 @@ export default function Home() {
     {
       name: 'Countries API',
       href: 'https://github.com/abiddiscombe/countries',
-      summary: (
-        <>
-          {' '}
-          An API for returning country metadata and geometry. <em>Archived.</em>
-        </>
-      ),
+      summary: <>(Archived) An API for returning country metadata, distances, and geometry.</>,
     },
   ];
 
@@ -93,16 +88,32 @@ export default function Home() {
 
       <Typography variant='h2'>Recent Projects</Typography>
 
-      <div className='my-3 grid gap-5 grid-cols-1 sm:grid-cols-3'>
+      <div className='grid gap-4 grid-cols-1 sm:grid-cols-3'>
         {projects.map((project) => (
-          <article key={project.href}>
-            <Typography variant='h3'>
-              <ExternalLink href={project.href} message={project.name} />
-            </Typography>
-            <Typography variant='bodyLesser'>{project.summary}</Typography>
-          </article>
+          <ProjectCard key={project.href} {...project} />
         ))}
       </div>
     </>
+  );
+}
+
+interface ProjectCardProps {
+  href: string;
+  name: string;
+  summary: React.ReactNode;
+}
+
+function ProjectCard(p: ProjectCardProps) {
+  return (
+    <div className='p-[1px] shadow-sm hover:shadow rounded bg-fontLightest-light dark:bg-fontLightest-dark hover:bg-gradient-to-tr from-[#E55D87] to-[#5FC3E4]'>
+      <article className='p-4 bg-back-light dark:bg-back-dark rounded'>
+        <Typography variant='h3'>
+          <ExternalLink href={p.href} message={p.name} />
+        </Typography>
+        <p className='mt-2 tracking-wide leading-relaxed text-sm text-fontLighter-light dark:text-fontLighter-dark'>
+          {p.summary}
+        </p>
+      </article>
+    </div>
   );
 }
