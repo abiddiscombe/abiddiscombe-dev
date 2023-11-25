@@ -27,7 +27,7 @@ export default function RootLayout(p: RootLayoutProps) {
         <link rel='icon' type='image/png' sizes='16x16' href='./favicon/favicon-16x16.png' />
       </head>
 
-      <body className='min-h-screen bg-gradient-to-b from-back-light/40 to-back-light dark:from-back-dark/30 dark:to-back-dark'>
+      <body className='min-h-screen md:overflow-y-scroll bg-gradient-to-b from-back-light/40 to-back-light dark:from-back-dark/30 dark:to-back-dark'>
         <Header />
         <Navigation />
         <main className='px-8'>
