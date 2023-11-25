@@ -1,9 +1,8 @@
 import './globals.css';
-import Link from 'next/link';
 import type { Metadata } from 'next';
-import { Typography } from '@/components/Typography';
-import { SocialLink } from '@/components/SocialLink';
-import { ExternalLink } from '@/components/ExternalLink';
+import { Header } from '@/components/blocks/Header';
+import { Footer } from '@/components/blocks/Footer';
+import { Navigation } from '@/components/blocks/Navigation';
 
 export const metadata: Metadata = {
   title: 'Archie Biddiscombe',
@@ -29,38 +28,12 @@ export default function RootLayout(p: RootLayoutProps) {
       </head>
 
       <body className='min-h-screen bg-gradient-to-b from-back-light/40 to-back-light dark:from-back-dark/30 dark:to-back-dark'>
-        <header className='px-8'>
-          <div className='mx-auto max-w-3xl pb-8 pt-10 md:pt-24 xl:pt-28 flex items-center justify-between'>
-            <Typography variant='h1'>
-              <Link href='./'>
-                Archie
-                <br />
-                <span className='text-fontLighter-light dark:text-fontDimmed-dark'>
-                  Biddiscombe
-                </span>
-              </Link>
-            </Typography>
-
-            <nav className='flex items-center gap-5 md:gap-4'>
-              <SocialLink type='email' />
-              <SocialLink type='github' />
-              <SocialLink type='linkedin' />
-              <SocialLink type='literature' />
-            </nav>
-          </div>
-        </header>
-
+        <Header />
+        <Navigation />
         <main className='px-8'>
           <div className='mx-auto max-w-3xl'>{p.children}</div>
         </main>
-
-        <footer className='px-8'>
-          <div className='mx-auto max-w-3xl pt-12 pb-8'>
-            <small className='text-fontLighter-light dark:text-fontLighter-dark'>
-              &copy; Archie Biddiscombe
-            </small>
-          </div>
-        </footer>
+        <Footer />
       </body>
     </html>
   );

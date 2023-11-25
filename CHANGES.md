@@ -5,6 +5,7 @@
 1. fix: project link font weight change on hover
 2. feat!: gradient background for contours and remove source link
 3. feat!: gradient background for contours and remove source link 2
+4. feat!: add new literature section and refactor of layout blocks
 
 ## 2.3.0 - November 2023
 
