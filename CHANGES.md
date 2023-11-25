@@ -10,6 +10,7 @@
 6. feat: project cards on homepage and dynamic gradient borders
 7. fix: increase social link icon size
 8. fix: update literature copy
+9. fix: update literature copy 2
 
 ## 2.3.0 - November 2023
 
