@@ -11,7 +11,7 @@ export function Header() {
           Biddiscombe
         </Typography>
 
-        <nav className='flex items-center gap-5 md:gap-4'>
+        <nav className='flex items-center gap-6 md:gap-5'>
           <SocialLink type='email' />
           <SocialLink type='github' />
           <SocialLink type='linkedin' />

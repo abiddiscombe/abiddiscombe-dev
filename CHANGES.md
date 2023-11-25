@@ -8,6 +8,7 @@
 4. feat!: add new literature section and refactor of layout blocks
 5. fix: fix scrollbar visibility to prevent leftwards shift of content
 6. feat: project cards on homepage and dynamic gradient borders
+7. fix: increase social link icon size
 
 ## 2.3.0 - November 2023
 
