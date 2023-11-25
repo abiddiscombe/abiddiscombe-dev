@@ -28,7 +28,7 @@ export default function RootLayout(p: RootLayoutProps) {
         <link rel='icon' type='image/png' sizes='16x16' href='./favicon/favicon-16x16.png' />
       </head>
 
-      <body className='min-h-screen bg-gradient-to-b from-back-light/10 to-back-light dark:from-back-dark/20 dark:to-back-dark'>
+      <body className='min-h-screen bg-gradient-to-b from-back-light/40 to-back-light dark:from-back-dark/30 dark:to-back-dark'>
         <header className='px-8'>
           <div className='mx-auto max-w-3xl pb-8 pt-10 md:pt-24 xl:pt-28 flex items-center justify-between'>
             <Typography variant='h1'>
