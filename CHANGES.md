@@ -3,6 +3,7 @@
 ## 2.4.1 - November 2023
 
 1. fix: incorrect email link in header
+2. chore: amend project copy
 
 ## 2.4.0 - November 2023
 

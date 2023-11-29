@@ -28,7 +28,7 @@ export default function Home() {
     {
       name: 'Countries API',
       href: 'https://github.com/abiddiscombe/countries',
-      summary: <>(Archived) An API for returning country metadata, distances, and geometry.</>,
+      summary: <>Archived. An API for returning country metadata, distances, and geometry.</>,
     },
   ];
 
