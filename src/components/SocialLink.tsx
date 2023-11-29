@@ -3,7 +3,7 @@ interface SocialLinkProps {
 }
 
 export function SocialLink(p: SocialLinkProps) {
-  const email = 'mailto://hello@abiddiscombe.dev';
+  const email = 'mailto:hi@abiddiscombe.dev';
   const github = 'https://github.com/abiddiscombe';
   const linkedin = 'https://linkedin.com/in/archiebiddiscombe';
 
