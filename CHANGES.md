@@ -4,6 +4,7 @@
 
 1. fix: incorrect email link in header
 2. chore: amend project copy
+3. feat: add article to literature section
 
 ## 2.4.0 - November 2023
 

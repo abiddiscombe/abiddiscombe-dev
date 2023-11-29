@@ -30,6 +30,12 @@ export default function Literature() {
         title='RethinkDB: why we failed'
         author='Slava Akhmechet'
       />
+      <LiteratureCard
+        href='https://www.codingvc.com/p/why-startup-technical-diligence-is-a-waste-of-time'
+        date='2016'
+        title='Why Startup Technical Diligence is a Waste of Time'
+        author='Leo Polovets'
+      />
       <Typography variant='h2'>Better Programming</Typography>
       <LiteratureCard
         href='https://boringtechnology.club'
