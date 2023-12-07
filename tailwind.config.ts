@@ -13,12 +13,12 @@ const config: Config = {
     },
     colors: {
       purple: {
-        dark: "rgb(157, 87, 244)",
-        light: "rgb(157, 87, 244)",
+        dark: "#9D57F4",
+        light: "#9D57F4",
       },
       amber: {
-        dark: "rgb(246, 133, 17)",
-        light: "rgb(228, 111, 0)",
+        dark: "#F68511",
+        light: "#E46F00",
       },
       back: {
         dark: "#1a1a1a",
