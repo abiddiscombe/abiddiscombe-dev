@@ -10,13 +10,13 @@ export function Navigation() {
       title: 'Home',
     },
     {
-      href: '/literature',
-      title: 'Literature',
+      href: '/reading',
+      title: 'Reading',
     },
   ];
   return (
     <nav className='px-8 pt-2 pb-8'>
-      <div className='mx-auto max-w-3xl'>
+      <div className='mx-auto max-w-2xl'>
         <ul className='flex gap-6 items-center'>
           {linkItems.map((linkItem) => (
             <li key={linkItem.href}>

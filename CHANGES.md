@@ -1,5 +1,15 @@
 # Changelog
 
+## 2.5.0 - December 2023
+
+1. refactor: create data dir and project file
+2. feat: new homepage copy and sitewide styling \*
+3. refactor: switch rga to hex in tailwind config
+4. feat: literature link change to reading
+5. docs: update CHANGES.md (plus prettier auto)
+
+\* - This PR contains a variety of changes to styling, page layout, and copy.
+
 ## 2.4.1 - November 2023
 
 1. fix: incorrect email link in header

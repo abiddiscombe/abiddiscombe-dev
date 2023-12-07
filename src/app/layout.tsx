@@ -31,7 +31,7 @@ export default function RootLayout(p: RootLayoutProps) {
         <Header />
         <Navigation />
         <main className='px-8'>
-          <div className='mx-auto max-w-3xl'>{p.children}</div>
+          <div className='mx-auto max-w-2xl'>{p.children}</div>
         </main>
         <Footer />
       </body>
