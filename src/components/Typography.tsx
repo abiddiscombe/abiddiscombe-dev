@@ -13,17 +13,17 @@ export function Typography(p: TypographyProps) {
       );
 
     case 'h2':
-      return <h2 className='pt-6 pb-4 tracking-wider font-semibold'>{p.children}</h2>;
+      return <h2 className='py-6 tracking-wider font-semibold'>{p.children}</h2>;
 
     case 'h3':
-      return <h3 className='tracking-wider leading-relaxed font-normal'>{p.children}</h3>;
+      return <h3 className='pb-1 tracking-wider leading-relaxed font-normal'>{p.children}</h3>;
 
     case 'body':
-      return <p className='pb-6 tracking-wide leading-relaxed font-normal'>{p.children}</p>;
+      return <p className='pb-4 tracking-wide leading-relaxed font-normal'>{p.children}</p>;
 
-    case 'bodyLesser':
+    case 'small':
       return (
-        <p className='tracking-wide leading-relaxed font-normal text-fontLighter-light dark:text-fontLighter-dark'>
+        <p className='tracking-wide text-sm leading-relaxed font-normal text-fontLighter-light dark:text-fontLighter-dark'>
           {p.children}
         </p>
       );

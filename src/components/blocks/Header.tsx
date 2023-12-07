@@ -4,7 +4,7 @@ import { SocialLink } from '../SocialLink';
 export function Header() {
   return (
     <header className='px-8 pt-10 md:pt-24 xl:pt-28 pb-2'>
-      <div className='mx-auto max-w-3xl flex items-center justify-between'>
+      <div className='mx-auto max-w-2xl flex items-center justify-between'>
         <Typography variant='h1'>
           Archie
           <br />

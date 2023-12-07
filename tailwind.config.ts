@@ -12,6 +12,14 @@ const config: Config = {
       sans: ["Raleway", "sans-serif"],
     },
     colors: {
+      purple: {
+        dark: "rgb(157, 87, 244)",
+        light: "rgb(157, 87, 244)",
+      },
+      amber: {
+        dark: "rgb(246, 133, 17)",
+        light: "rgb(228, 111, 0)",
+      },
       back: {
         dark: "#1a1a1a",
         light: "#fafafa",
