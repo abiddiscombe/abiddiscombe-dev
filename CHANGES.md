@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.6.0 - December 2023
+
+1. feat: add Adobe Spectrum to reading list
+
 ## 2.5.0 - December 2023
 
 1. refactor: create data dir and project file

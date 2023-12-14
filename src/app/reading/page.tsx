@@ -76,6 +76,12 @@ export default function Literature() {
         title='Why We Love Tailwind'
         author='Joe Marshall @ Formcake'
       />
+      <LiteratureCard
+        href='https://spectrum.adobe.com/'
+        title='Adobe Spectrum: Guidebook'
+        author='Adobe'
+        format='UI Design System'
+      />
       <Typography variant='h2'>Web Infrastructure</Typography>
       <LiteratureCard
         href='https://deno.com/blog/the-future-of-web-is-on-the-edge'
