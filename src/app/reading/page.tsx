@@ -9,33 +9,6 @@ export default function Literature() {
         journey. I&apos;m collating this list for my own reflection, but perhaps you&apos;ll find it
         useful too!
       </Typography>
-      <Typography variant='h2'>Pastoral Development</Typography>
-      <LiteratureCard
-        href='https://www.taniarascia.com/everything-i-know-as-a-software-developer-without-a-degree/'
-        date='2019'
-        title='Everything I Know as a Software Developer Without a Degree'
-        author='Tania Rascia'
-      />
-      <LiteratureCard
-        href='https://www.youtube.com/watch?v=znYbn46Mies'
-        date='2012'
-        title='Choose Your Attitude'
-        author='Debra Searle'
-        format='YouTube Video'
-      />
-      <Typography variant='h2'>Start-Ups and Business</Typography>
-      <LiteratureCard
-        href='https://www.defmacro.org/2017/01/18/why-rethinkdb-failed.html'
-        date='2017'
-        title='RethinkDB: why we failed'
-        author='Slava Akhmechet'
-      />
-      <LiteratureCard
-        href='https://www.codingvc.com/p/why-startup-technical-diligence-is-a-waste-of-time'
-        date='2016'
-        title='Why Startup Technical Diligence is a Waste of Time'
-        author='Leo Polovets'
-      />
       <Typography variant='h2'>Better Programming</Typography>
       <LiteratureCard
         href='https://boringtechnology.club'
@@ -82,19 +55,45 @@ export default function Literature() {
         author='Adobe'
         format='UI Design System'
       />
-      <Typography variant='h2'>Web Infrastructure</Typography>
+      <Typography variant='h2'>Web Infrastructure & JavaScript</Typography>
       <LiteratureCard
         href='https://deno.com/blog/the-future-of-web-is-on-the-edge'
         date='2022'
         title='The Future of the Web is on the Edge'
         author='Andy Jiang @ Deno'
       />
-      <Typography variant='h2'>JavaScript (Including History)</Typography>
       <LiteratureCard
         href='https://deno.com/blog/commonjs-is-hurting-javascript'
         date='2022'
         title='CommonJS is hurting JavaScript'
         author='Andy Jiang @ Deno'
+      />
+      <Typography variant='h2'>Start-Ups and Business</Typography>
+      <LiteratureCard
+        href='https://www.defmacro.org/2017/01/18/why-rethinkdb-failed.html'
+        date='2017'
+        title='RethinkDB: why we failed'
+        author='Slava Akhmechet'
+      />
+      <LiteratureCard
+        href='https://www.codingvc.com/p/why-startup-technical-diligence-is-a-waste-of-time'
+        date='2016'
+        title='Why Startup Technical Diligence is a Waste of Time'
+        author='Leo Polovets'
+      />
+      <Typography variant='h2'>Pastoral Development</Typography>
+      <LiteratureCard
+        href='https://www.taniarascia.com/everything-i-know-as-a-software-developer-without-a-degree/'
+        date='2019'
+        title='Everything I Know as a Software Developer Without a Degree'
+        author='Tania Rascia'
+      />
+      <LiteratureCard
+        href='https://www.youtube.com/watch?v=znYbn46Mies'
+        date='2012'
+        title='Choose Your Attitude'
+        author='Debra Searle'
+        format='YouTube Video'
       />
       <Typography variant='body'>
         <i>FYI: I&apos;ll amend this list as articles become outdated and new ones are released.</i>
