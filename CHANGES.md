@@ -3,6 +3,7 @@
 ## 2.7.0 - December 2023
 
 1. feat: remove contour background
+2. feat: add framer-motion animations
 
 ## 2.6.0 - December 2023
 
