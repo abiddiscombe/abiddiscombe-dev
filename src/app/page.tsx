@@ -24,9 +24,9 @@ export default function Home() {
         transition={{ duration: 0.4, delay: 0.2 }}
       >
         <Typography variant='body'>
-          I&apos;m interested in designing <ExternalLink href='https://react.dev' message='React' />
-          -based web applications, exploring new geospatial technologies, and building APIs or other
-          backend things. I&apos;m often deploying to{' '}
+          I&apos;m interested in crafting <ExternalLink href='https://react.dev' message='React' />
+          -based web applications, exploring new geospatial technologies, and designing APIs or
+          other backend things. Currently deploying to{' '}
           <ExternalLink href='https://azure.com' message='Azure' />,{' '}
           <ExternalLink href='https://cloudflare.com' message='Cloudflare' />, or with{' '}
           <ExternalLink href='https://docker.com' message='Docker' /> on my home server.
@@ -39,8 +39,8 @@ export default function Home() {
         transition={{ duration: 0.4, delay: 0.4 }}
       >
         <Typography variant='body'>
-          Away from the desk, I love cooking, Spotify, and exploring new places. I have a BSc in
-          Geography from{' '}
+          Away from the desk, I love cooking and exploring new places. I have a BSc in Geography
+          from{' '}
           <ExternalLink
             href='https://www.durham.ac.uk/departments/academic/geography/'
             message='Durham University'

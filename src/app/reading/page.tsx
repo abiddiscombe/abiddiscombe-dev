@@ -13,9 +13,8 @@ export default function Literature() {
         transition={{ duration: 0.4, delay: 0 }}
       >
         <Typography variant='body'>
-          This is a collection of literature I&apos;ve come across which has aided my learning
-          journey. I&apos;m collating this list for my own reflection, but perhaps you&apos;ll find
-          it useful too!
+          This is a collection of literature I&apos;ve discovered on my learning journey. I&apos;m
+          collating this list for my own reflection, perhaps you&apos;ll find it useful too!
         </Typography>
       </motion.div>
 
