@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.7.0 - December 2023
+
+1. feat: remove contour background
+
 ## 2.6.0 - December 2023
 
 1. feat: add Adobe Spectrum to reading list
