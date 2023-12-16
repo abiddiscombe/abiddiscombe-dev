@@ -1,7 +1,6 @@
 import './globals.css';
 import type { Metadata } from 'next';
 import { Header } from '@/components/blocks/Header';
-import { Footer } from '@/components/blocks/Footer';
 import { Navigation } from '@/components/blocks/Navigation';
 
 export const metadata: Metadata = {
@@ -33,7 +32,6 @@ export default function RootLayout(p: RootLayoutProps) {
         <main className='px-8'>
           <div className='mx-auto max-w-2xl'>{p.children}</div>
         </main>
-        <Footer />
       </body>
     </html>
   );
