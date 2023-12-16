@@ -6,6 +6,7 @@
 2. feat: reorder reading list sections
 3. refactor: use data directory for reading list
 4. chore: update vscode dotfiles
+5. refactor: use data directory for reading list (pt2)
 
 ## 2.5.0 - December 2023
 

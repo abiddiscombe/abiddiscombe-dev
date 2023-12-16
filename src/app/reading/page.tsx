@@ -14,7 +14,10 @@ export default function Literature() {
         <div key={section.label}>
           <Typography variant='h2'>{section.label}</Typography>
           {section.entries.map((entry) => (
-            <article key={entry.href} className='mb-4 p-4 bg-back-light dark:bg-back-dark rounded border border-fontLightest-light dark:border-fontLightest-dark hover:border-fontLighter-light hover:dark:border-fontLighter-dark'>
+            <article
+              key={entry.href}
+              className='mb-4 p-4 bg-back-light dark:bg-back-dark rounded border border-fontLightest-light dark:border-fontLightest-dark hover:border-fontLighter-light hover:dark:border-fontLighter-dark'
+            >
               <Typography variant='h3'>
                 <ExternalLink href={entry.href} message={entry.title} useArrow={true} />
               </Typography>
