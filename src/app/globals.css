@@ -6,6 +6,4 @@
 :root {
   @apply bg-back-light dark:bg-back-dark;
   @apply text-font-light dark:text-font-dark;
-  @apply bg-center bg-no-repeat bg-cover;
-  @apply bg-[url("/media/bg-light.svg")] dark:bg-[url("/media/bg-dark.svg")];
 }
