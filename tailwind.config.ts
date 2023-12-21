@@ -9,32 +9,46 @@ const config: Config = {
   plugins: [],
   theme: {
     fontFamily: {
-      sans: ["Raleway", "sans-serif"],
+      sans: [
+        "-apple-system",
+        "BlinkMacSystemFont",
+        "avenir next",
+        "avenir",
+        "segoe ui",
+        "helvetica neue",
+        "helvetica",
+        "Cantarell",
+        "Ubuntu",
+        "roboto",
+        "noto",
+        "arial",
+        "sans-serif",
+      ],
     },
     colors: {
-      purple: {
-        dark: "#9D57F4",
-        light: "#9D57F4",
+      blue: {
+        dark: "#8fcafc",
+        light: "#0054b6",
       },
       amber: {
-        dark: "#F68511",
-        light: "#E46F00",
+        dark: "#ff9581",
+        light: "#b14c00",
       },
-      back: {
-        dark: "#1a1a1a",
+      l0: {
+        dark: "#242120",
         light: "#fafafa",
       },
-      font: {
-        dark: "#e5e5e5",
-        light: "#3a3a3a",
+      l1: {
+        dark: "#494949",
+        light: "#bbbbbb",
       },
-      fontLighter: {
+      l2: {
         dark: "#a0a0a0",
         light: "#6f6f6f",
       },
-      fontLightest: {
-        dark: "#494949",
-        light: "#bbbbbb",
+      l3: {
+        dark: "#e5e5e5",
+        light: "#3a3a3a",
       },
     },
   },

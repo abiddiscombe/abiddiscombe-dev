@@ -1,22 +1,60 @@
+'use client';
+import Link from 'next/link';
+import { motion } from 'framer-motion';
 import { Typography } from '../Typography';
-import { SocialLink } from '../SocialLink';
+import { Github, Linkedin, Envelope } from 'react-bootstrap-icons';
 
 export function Header() {
-  return (
-    <header className='px-8 pt-10 md:pt-24 xl:pt-28 pb-2'>
-      <div className='mx-auto max-w-2xl flex items-center justify-between'>
-        <Typography variant='h1'>
-          Archie
-          <br />
-          Biddiscombe
-        </Typography>
+  const links = [
+    {
+      href: 'https://github.com/abiddiscombe',
+      text: 'GitHub',
+      content: <Github />,
+      useNewTab: true,
+    },
+    {
+      href: 'https://linkedin.com/in/archiebiddiscombe',
+      text: 'LinkedIn',
+      content: <Linkedin />,
+      useNewTab: true,
+    },
+  ];
 
-        <nav className='flex items-center gap-6 md:gap-5'>
-          <SocialLink type='email' />
-          <SocialLink type='github' />
-          <SocialLink type='linkedin' />
+  return (
+    <header className='pb-6 pt-10 md:pt-24 xl:pt-28'>
+      <motion.div
+        initial={{ opacity: 0, y: 14 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.2, delay: 0 }}
+      >
+        <nav className='flex gap-6 sm:gap-4 items-center'>
+          <Link
+            href='/'
+            className='flex-grow hover:underline underline-offset-2 decoration-l3-light dark:decoration-l3-dark'
+          >
+            <Typography variant='h1'>
+              A<span className='hidden sm:inline'>rchie</span>
+              <span className='inline sm:hidden'>.</span> Biddiscombe
+            </Typography>
+          </Link>
+          {links.map((link) => (
+            <a
+              key={link.href}
+              target={link.useNewTab ? '_blank' : ''}
+              aria-label={`${link.text} (Opens in a New Tab)`}
+              href={link.href}
+              className='text-xl text-l2-light hover:text-l3-light dark:text-l2-dark dark:hover:text-l3-dark'
+            >
+              {link.content}
+            </a>
+          ))}
         </nav>
-      </div>
+        <Typography variant='subtitle'>
+          Assoc. Software Engineer
+          <br />
+          United Kingdom
+        </Typography>
+      </motion.div>
     </header>
   );
 }

@@ -5,11 +5,9 @@ This is the code for [abiddiscombe.dev](https://abiddiscombe.dev). It's built wi
 - [NextJS](https://nextjs.org)
 - [Favicon.io](https://favicon.io)
 - [TailwindCSS](https://tailwindcss.com)
-- [Feather Icons](https://feathericons.com/)
-- [Google Fonts (Raleway)](https://fonts.google.com/specimen/Raleway)
-- [Ordnance Survey (Terrain 50)](https://www.ordnancesurvey.co.uk/products/os-terrain-50)
+- [Bootstrap Icons](https://icons.getbootstrap.com/)
 
-This project was inspired by [paco.me](https://paco.me) and [taniarascia.com](https://taniarascia.com).
+This project was inspired by [paco.me](https://paco.me), [frankchimero.com](https://frankchimero.com/), and [taniarascia.com](https://taniarascia.com).
 
 A changelog is provided in [CHANGES.md](./CHANGES.md).
 

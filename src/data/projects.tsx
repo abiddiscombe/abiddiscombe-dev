@@ -17,7 +17,7 @@ export const projects = [
     ],
   },
   {
-    name: 'Whereabouts',
+    name: 'Whereabouts API',
     href: 'https://github.com/abiddiscombe/whereabouts',
     summary: <>A GeoJSON Points-of-Interest API with textual and geospatial search capabilities.</>,
     isArchived: false,
