@@ -1,7 +1,8 @@
 import './globals.css';
 import type { Metadata } from 'next';
+import { Main } from '@/components/blocks/Main';
 import { Header } from '@/components/blocks/Header';
-import { Navigation } from '@/components/blocks/Navigation';
+import { Footer } from '@/components/blocks/Footer';
 
 export const metadata: Metadata = {
   title: 'Archie Biddiscombe',
@@ -26,12 +27,10 @@ export default function RootLayout(p: RootLayoutProps) {
         <link rel='icon' type='image/png' sizes='16x16' href='./favicon/favicon-16x16.png' />
       </head>
 
-      <body className='min-h-screen md:overflow-y-scroll bg-gradient-to-b from-back-light/40 to-back-light dark:from-back-dark/30 dark:to-back-dark'>
+      <body className='px-8 mx-auto max-w-3xl min-h-screen grid grid-rows-[auto,_1fr,_auto]'>
         <Header />
-        <Navigation />
-        <main className='px-8'>
-          <div className='mx-auto max-w-2xl'>{p.children}</div>
-        </main>
+        <Main outlet={p.children} />
+        <Footer />
       </body>
     </html>
   );

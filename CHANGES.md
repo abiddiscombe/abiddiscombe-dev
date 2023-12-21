@@ -1,5 +1,11 @@
 # Changelog
 
+## 3.0.0 - December 2023
+
+1. feat!: major site redesign \*
+
+\* - This PR contains a variety of changes to styling, page layout, and copy.
+
 ## 2.7.0 - December 2023
 
 1. feat: remove contour background
