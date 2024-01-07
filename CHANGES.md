@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.1.0 - January 2024
+
+1. feat: increase body text contrast
+
 ## 3.0.0 - December 2023
 
 1. feat!: major site redesign \*
