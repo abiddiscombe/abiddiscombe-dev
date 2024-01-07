@@ -3,5 +3,5 @@ interface MainProps {
 }
 
 export function Main(p: MainProps) {
-  return <main>{p.outlet}</main>;
+  return <main className='pb-8'>{p.outlet}</main>;
 }

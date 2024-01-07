@@ -36,7 +36,7 @@ export function Typography(p: TypographyProps) {
       return (
         <p
           className={
-            'mb-4 leading-relaxed tracking-wide font-light text-l2-light dark:text-l2-dark'
+            'mb-4 leading-relaxed tracking-wide font-light text-l3-light dark:text-l3-dark'
           }
         >
           {p.children}

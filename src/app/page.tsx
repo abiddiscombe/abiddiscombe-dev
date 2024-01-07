@@ -23,7 +23,7 @@ export default function Home() {
         <motion.div
           initial={{ opacity: 0, y: 14 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4, delay: 0.2 }}
+          transition={{ duration: 0.4, delay: 0.1 }}
         >
           <Typography variant='body'>
             I&apos;m interested in crafting{' '}
@@ -38,7 +38,7 @@ export default function Home() {
         <motion.div
           initial={{ opacity: 0, y: 14 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4, delay: 0.4 }}
+          transition={{ duration: 0.4, delay: 0.2 }}
         >
           <Typography variant='body'>
             Away from the desk, I love cooking and exploring new places. I have a BSc in Geography
@@ -56,7 +56,7 @@ export default function Home() {
         <motion.div
           initial={{ opacity: 0, y: 14 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4, delay: 0.6 }}
+          transition={{ duration: 0.4, delay: 0.4 }}
         >
           <Typography variant='h2'>Recent Projects</Typography>
           <div className='py-2 grid gap-4 md:gap-6 grid-cols-1 sm:grid-cols-2'>
