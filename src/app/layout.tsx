@@ -2,7 +2,6 @@ import './globals.css';
 import type { Metadata } from 'next';
 import { Main } from '@/components/blocks/Main';
 import { Header } from '@/components/blocks/Header';
-import { Footer } from '@/components/blocks/Footer';
 
 export const metadata: Metadata = {
   title: 'Archie Biddiscombe',
@@ -30,7 +29,6 @@ export default function RootLayout(p: RootLayoutProps) {
       <body className='px-8 mx-auto max-w-3xl min-h-screen grid grid-rows-[auto,_1fr,_auto]'>
         <Header />
         <Main outlet={p.children} />
-        <Footer />
       </body>
     </html>
   );

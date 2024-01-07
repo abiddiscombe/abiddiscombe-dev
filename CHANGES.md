@@ -4,6 +4,7 @@
 
 1. feat: increase body text contrast
 2. feat: improve transition motion style
+3. feat!: remove footer
 
 ## 3.0.0 - December 2023
 
