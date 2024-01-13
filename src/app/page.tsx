@@ -14,7 +14,6 @@ export default function Home() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4, delay: 0 }}
         >
-          <Typography variant='h2'>About</Typography>
           <Typography variant='body'>
             Hey! I&apos;m an Associate Software Engineer, currently working at{' '}
             <ExternalLink href='https://www.os.uk' message='Ordnance Survey' />.

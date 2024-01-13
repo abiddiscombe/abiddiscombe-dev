@@ -20,7 +20,7 @@ export function Header() {
   ];
 
   return (
-    <header className='pb-6 pt-10 md:pt-24 xl:pt-28'>
+    <header className='py-10 md:pt-24 xl:pt-28'>
       <nav className='flex gap-6 sm:gap-4 items-center'>
         <Link
           href='/'
