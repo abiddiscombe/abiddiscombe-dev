@@ -1,34 +1,35 @@
 'use client';
 import Link from 'next/link';
 import { Typography } from '../Typography';
-import { Github, Linkedin } from 'react-bootstrap-icons';
+import { GitHub } from '../icons/GitHub';
+import { LinkedIn } from '../icons/LinkedIn';
 
 export function Header() {
   const links = [
     {
       href: 'https://github.com/abiddiscombe',
       text: 'GitHub',
-      content: <Github />,
+      content: <GitHub />,
       useNewTab: true,
     },
     {
       href: 'https://linkedin.com/in/archiebiddiscombe',
       text: 'LinkedIn',
-      content: <Linkedin />,
+      content: <LinkedIn />,
       useNewTab: true,
     },
   ];
 
   return (
     <header className='py-10 md:pt-24 xl:pt-28'>
-      <nav className='flex gap-6 sm:gap-4 items-center'>
+      <nav className='mb-2 flex gap-6 items-center'>
         <Link
           href='/'
           className='flex-grow hover:underline underline-offset-2 decoration-l3-light dark:decoration-l3-dark'
         >
           <Typography variant='h1'>
-            A<span className='hidden sm:inline'>rchie</span>
-            <span className='inline sm:hidden'>.</span> Biddiscombe
+            Archie <br className='sm:hidden' />
+            Biddiscombe
           </Typography>
         </Link>
         {links.map((link) => (
