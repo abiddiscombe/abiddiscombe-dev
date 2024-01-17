@@ -14,9 +14,9 @@ export default function Home() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4, delay: 0 }}
         >
-          <Typography variant='h2'>About</Typography>
+          <Typography variant='h2'>Hello</Typography>
           <Typography variant='body'>
-            Hey! I&apos;m an Associate Software Engineer, currently working at{' '}
+            I&apos;m an Associate Software Engineer, currently working at{' '}
             <ExternalLink href='https://www.os.uk' message='Ordnance Survey' />.
           </Typography>
         </motion.div>
@@ -28,11 +28,11 @@ export default function Home() {
           <Typography variant='body'>
             I&apos;m interested in crafting{' '}
             <ExternalLink href='https://react.dev' message='React' />
-            -based web applications, exploring new geospatial technologies, and designing APIs or
+            -based web applications, exploring new geospatial technologies, and developing APIs or
             other backend things. Currently deploying to{' '}
             <ExternalLink href='https://azure.com' message='Azure' />,{' '}
-            <ExternalLink href='https://cloudflare.com' message='Cloudflare' />, or with{' '}
-            <ExternalLink href='https://docker.com' message='Docker' /> on my home server.
+            <ExternalLink href='https://cloudflare.com' message='Cloudflare' />, and with{' '}
+            <ExternalLink href='https://docker.com' message='Docker' /> directly on my homelab.
           </Typography>
         </motion.div>
         <motion.div
@@ -47,7 +47,7 @@ export default function Home() {
               href='https://www.durham.ac.uk/departments/academic/geography/'
               message='Durham University'
             />{' '}
-            where I specialised in GIS and Glaciology.
+            where I specialised in GIS, climate change, and Glaciology.
           </Typography>
         </motion.div>
       </section>
@@ -58,7 +58,7 @@ export default function Home() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4, delay: 0.4 }}
         >
-          <Typography variant='h2'>Recent Projects</Typography>
+          <Typography variant='h2'>Recently</Typography>
           <div className='py-2 grid gap-4 md:gap-6 grid-cols-1 sm:grid-cols-2'>
             {projects.map((project) => (
               <ProjectCard key={project.href} {...project} />

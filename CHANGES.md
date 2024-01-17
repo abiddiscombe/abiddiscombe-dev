@@ -1,5 +1,13 @@
 # Changelog
 
+## 3.2.0 - January 2024
+
+1. feat: Remove introductory heading
+2. feat: Restructure heading on mobile
+3. refactor: Use HeroIcons / ExternalLink style changes
+4. feat: Create social icons navbar / refactor HTML structure
+5. chore: Update CHANGES.md and SemVer codes
+
 ## 3.1.0 - January 2024
 
 1. feat: increase body text contrast

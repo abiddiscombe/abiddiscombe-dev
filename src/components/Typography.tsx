@@ -6,16 +6,9 @@ interface TypographyProps {
 
 export function Typography(p: TypographyProps) {
   switch (p.variant) {
-    case 'h1':
-      return (
-        <h1 className='uppercase tracking-widest text-l3-light dark:text-l3-dark font-bold'>
-          {p.children}
-        </h1>
-      );
-
     case 'h2':
       return (
-        <h2 className='pb-4 pt-6 tracking-wider text-l3-light dark:text-l3-dark font-semibold'>
+        <h2 className='py-4 tracking-wider text-l3-light dark:text-l3-dark font-semibold'>
           {p.children}
         </h2>
       );
@@ -36,7 +29,7 @@ export function Typography(p: TypographyProps) {
       return (
         <p
           className={
-            'mb-4 leading-relaxed tracking-wide font-light text-l3-light dark:text-l3-dark'
+            'mb-4 leading-relaxed tracking-wide font-light text-l2-light dark:text-l2-dark'
           }
         >
           {p.children}
