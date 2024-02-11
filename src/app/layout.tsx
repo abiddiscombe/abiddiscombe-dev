@@ -25,7 +25,7 @@ export default function RootLayout(p: RootLayoutProps) {
         <link rel='icon' type='image/png' sizes='32x32' href='./favicon/favicon-32x32.png' />
         <link rel='icon' type='image/png' sizes='16x16' href='./favicon/favicon-16x16.png' />
       </head>
-      <body className='p-6 pt-10 h-screen sm:grid sm:place-items-center'>
+      <body className='h-screen p-6 pt-10 sm:grid sm:place-items-center'>
         <main className='max-w-xl'>
           <Header />
           {p.children}

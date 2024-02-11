@@ -4,6 +4,7 @@
 
 1. feat: Site redesign. \*
 2. chore: Update site description to match content.
+3. chore: Install Tailwind's class-sorting Prettier plugin.
 
 \* - This commit includes various changes to site structure and copy.
 

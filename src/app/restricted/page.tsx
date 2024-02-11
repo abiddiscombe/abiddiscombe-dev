@@ -16,7 +16,7 @@ export default function Restricted() {
       {ref && (
         <>
           <Typography variant='body'>The service reported the following metadata:</Typography>
-          <code className='text-sm block font-light tracking-tight mb-6 px-6 py-2 rounded bg-l1-light/20 dark:bg-l1-dark/20 border border-l1-light dark:border-l1-dark'>
+          <code className='mb-6 block rounded border border-l1-light bg-l1-light/20 px-6 py-2 text-sm font-light tracking-tight dark:border-l1-dark dark:bg-l1-dark/20'>
             {ref}
           </code>
         </>

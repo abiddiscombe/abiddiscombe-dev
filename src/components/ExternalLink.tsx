@@ -10,7 +10,7 @@ export function ExternalLink(p: ExternalLinkProps) {
       href={p.href}
       target='_blank'
       aria-label={`${p.message} (Opens in a New Tab)`}
-      className='duration-200 underline underline-offset-2 active:decoration-2 decoration-l2-light dark:decoration-l2-dark hover:decoration-l3-light hover:text-l3-light hover:dark:decoration-l3-dark hover:dark:text-l3-dark'
+      className='underline decoration-l2-light underline-offset-2 duration-200 hover:text-l3-light hover:decoration-l3-light active:decoration-2 dark:decoration-l2-dark hover:dark:text-l3-dark hover:dark:decoration-l3-dark'
     >
       {p.message}
     </a>

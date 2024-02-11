@@ -7,7 +7,7 @@ export function Typography(p: TypographyProps) {
   switch (p.variant) {
     case 'h2':
       return (
-        <h2 className='py-4 tracking-wider text-l3-light dark:text-l3-dark font-semibold'>
+        <h2 className='py-4 font-semibold tracking-wider text-l3-light dark:text-l3-dark'>
           {p.children}
         </h2>
       );
