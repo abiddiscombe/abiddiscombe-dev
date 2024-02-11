@@ -1,23 +1,19 @@
 'use client';
 import { motion } from 'framer-motion';
 import { Typography } from '@/components/Typography';
-import { LinkButton } from '@/components/LinkButton';
 import { ExternalLink } from '@/components/ExternalLink';
-import { GitHub } from '@/components/icons/GitHub';
-import { LinkedIn } from '@/components/icons/LinkedIn';
 
 export default function Home() {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 14 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.4, delay: 0.2 }}
+      initial={{ opacity: 0, x: -14 }}
+      animate={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.2, delay: 0.2 }}
     >
       <Typography variant='body'>
         Hey there! I&apos;m an Associate Software Engineer based in the UK and currently working for{' '}
         <ExternalLink href='https://www.os.uk' message='Ordnance Survey' />.
       </Typography>
-
       <Typography variant='body'>
         My areas of specialism include building{' '}
         <ExternalLink href='https://react.dev' message='React' /> frontends with various styling
@@ -33,19 +29,9 @@ export default function Home() {
         <ExternalLink href='https://cloudflare.com' message='Cloudflare' />, and with{' '}
         <ExternalLink href='https://docker.com' message='Docker' /> on my homelab.
       </Typography>
-
       <Typography variant='body'>
         Away from the desk, I love cooking and adventuring to new places 🌄.
       </Typography>
-
-      <nav className='mt-6 flex items-center gap-4'>
-        <LinkButton
-          href='https://linkedin.com/in/archiebiddiscombe'
-          icon={<LinkedIn />}
-          label='LinkedIn'
-        />
-        <LinkButton href='https://github.com/abiddiscombe' icon={<GitHub />} label='GitHub' />
-      </nav>
     </motion.div>
   );
 }

@@ -3,6 +3,8 @@ import { GeistSans } from 'geist/font/sans';
 import { GeistMono } from 'geist/font/mono';
 import type { Metadata } from 'next';
 import { Header } from '@/components/Header';
+import { Container } from '@/components/Container';
+import { Footer } from '@/components/Footer';
 
 export const metadata: Metadata = {
   title: 'Archie Biddiscombe',
@@ -25,11 +27,12 @@ export default function RootLayout(p: RootLayoutProps) {
         <link rel='icon' type='image/png' sizes='32x32' href='./favicon/favicon-32x32.png' />
         <link rel='icon' type='image/png' sizes='16x16' href='./favicon/favicon-16x16.png' />
       </head>
-      <body className='h-screen p-6 pt-10 sm:grid sm:place-items-center'>
-        <main className='max-w-xl'>
+      <body className='grid h-screen grid-rows-[auto,_1fr,_auto] p-6 pt-10 sm:grid-rows-1 sm:place-items-center'>
+        <Container>
           <Header />
           {p.children}
-        </main>
+          <Footer />
+        </Container>
       </body>
     </html>
   );

@@ -13,7 +13,7 @@ export default function Error() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.4, delay: 0.2 }}
     >
-      <Typography variant='h2'>Uh oh - that's an error.</Typography>
+      <Typography variant='h2'>Uh oh - that&apos;s an error.</Typography>
       <Typography variant='body'>
         Something went wrong whilst trying to access one of my online services.
         <br />

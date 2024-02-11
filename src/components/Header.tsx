@@ -4,8 +4,8 @@ import { motion } from 'framer-motion';
 export function Header() {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 14 }}
-      animate={{ opacity: 1, y: 0 }}
+      initial={{ opacity: 0, x: -16 }}
+      animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.4, delay: 0 }}
     >
       <header className='pb-6'>
