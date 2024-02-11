@@ -5,6 +5,7 @@
 1. feat: Site redesign. \*
 2. chore: Update site description to match content.
 3. chore: Install Tailwind's class-sorting Prettier plugin.
+4. feat: Update /restricted endpoint text and URL (to /error).
 
 \* - This commit includes various changes to site structure and copy.
 

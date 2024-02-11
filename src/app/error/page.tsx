@@ -1,21 +1,27 @@
 'use client';
+import { motion } from 'framer-motion';
 import { useSearchParams } from 'next/navigation';
 import { Typography } from '@/components/Typography';
 
-export default function Restricted() {
+export default function Error() {
   const sParams = useSearchParams();
   const ref = sParams.get('ref');
   const ets = getCurrentDateTime();
   return (
-    <section>
-      <Typography variant='h2'>Access Restricted</Typography>
+    <motion.div
+      initial={{ opacity: 0, y: 14 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.4, delay: 0.2 }}
+    >
+      <Typography variant='h2'>Uh oh - that's an error.</Typography>
       <Typography variant='body'>
-        You&apos;re likely seeing this page because you did not have valid credentials to access one
-        of my services. If this is a mistake, please reach out.
+        Something went wrong whilst trying to access one of my online services.
+        <br />
+        If this keeps happening, please reach out.
       </Typography>
       {ref && (
         <>
-          <Typography variant='body'>The service reported the following metadata:</Typography>
+          <Typography variant='body'>The service reported the following information:</Typography>
           <code className='mb-6 block rounded border border-l1-light bg-l1-light/20 px-6 py-2 text-sm font-light tracking-tight dark:border-l1-dark dark:bg-l1-dark/20'>
             {ref}
           </code>
@@ -24,7 +30,7 @@ export default function Restricted() {
       <Typography variant='body'>
         <small>{ets}</small>
       </Typography>
-    </section>
+    </motion.div>
   );
 }
 
