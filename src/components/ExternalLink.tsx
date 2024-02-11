@@ -1,5 +1,3 @@
-import { ArrowUpRightIcon } from '@heroicons/react/16/solid';
-
 interface ExternalLinkProps {
   href: string;
   message: string;
@@ -12,14 +10,9 @@ export function ExternalLink(p: ExternalLinkProps) {
       href={p.href}
       target='_blank'
       aria-label={`${p.message} (Opens in a New Tab)`}
-      className={`${
-        p.useArrow && 'inline-flex items-center'
-      } duration-200 underline underline-offset-2 decoration-l2-light dark:decoration-l2-dark hover:decoration-l3-light hover:text-l3-light hover:dark:decoration-l3-dark hover:dark:text-l3-dark group`}
+      className='underline decoration-l2-light underline-offset-2 duration-200 hover:text-l3-light hover:decoration-l3-light active:decoration-2 dark:decoration-l2-dark hover:dark:text-l3-dark hover:dark:decoration-l3-dark'
     >
-      <span className={`${p.useArrow && 'mr-2 group-hover:mr-3 duration-200'}`}>{p.message}</span>
-      {p.useArrow && (
-        <ArrowUpRightIcon className='h-4 text-l1-light dark:text-l1-dark group-hover:text-l2-light group-hover:dark:text-l2-dark' />
-      )}
+      {p.message}
     </a>
   );
 }

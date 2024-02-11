@@ -9,31 +9,10 @@ const config: Config = {
   plugins: [],
   theme: {
     fontFamily: {
-      sans: [
-        "-apple-system",
-        "BlinkMacSystemFont",
-        "avenir next",
-        "avenir",
-        "segoe ui",
-        "helvetica neue",
-        "helvetica",
-        "Cantarell",
-        "Ubuntu",
-        "roboto",
-        "noto",
-        "arial",
-        "sans-serif",
-      ],
+      sans: ["var(--font-geist-sans)"],
+      mono: ["var(--font-geist-mono)"],
     },
     colors: {
-      blue: {
-        dark: "#8fcafc",
-        light: "#0054b6",
-      },
-      amber: {
-        dark: "#ff9581",
-        light: "#b14c00",
-      },
       l0: {
         dark: "#242120",
         light: "#fafafa",

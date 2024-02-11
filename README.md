@@ -4,11 +4,8 @@ This is the code for [abiddiscombe.dev](https://abiddiscombe.dev). It's built wi
 
 - [NextJS](https://nextjs.org)
 - [Favicon.io](https://favicon.io)
-- [Tailwind](https://tailwindcss.com)
-- [HeroIcons](https://heroicons.com)
+- [TailwindCSS](https://tailwindcss.com)
 - [Bootstrap Icons (Social Icons)](https://icons.getbootstrap.com/)
-
-This project was inspired by [paco.me](https://paco.me), [frankchimero.com](https://frankchimero.com/), and [taniarascia.com](https://taniarascia.com).
 
 A changelog is provided in [CHANGES.md](./CHANGES.md).
 

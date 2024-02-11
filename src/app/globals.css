@@ -3,6 +3,5 @@
 @tailwind utilities;
 
 :root {
-  @apply font-sans;
   @apply bg-l0-light dark:bg-l0-dark;
 }
