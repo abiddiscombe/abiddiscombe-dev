@@ -1,5 +1,11 @@
 # Changelog
 
+## 4.0.0 - February 2024
+
+1. feat: Site redesign. \*
+
+\* - This commit includes various changes to site structure and copy.
+
 ## 3.2.0 - January 2024
 
 1. feat: Remove introductory heading

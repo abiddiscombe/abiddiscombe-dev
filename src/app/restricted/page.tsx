@@ -8,20 +8,22 @@ export default function Restricted() {
   const ets = getCurrentDateTime();
   return (
     <section>
-      <Typography variant='body'>
-        <small>Error @ {ets}</small>
-      </Typography>
       <Typography variant='h2'>Access Restricted</Typography>
       <Typography variant='body'>
         You&apos;re likely seeing this page because you did not have valid credentials to access one
-        of my services. If you believe this to be a mistake, please reach out.
+        of my services. If this is a mistake, please reach out.
       </Typography>
       {ref && (
         <>
           <Typography variant='body'>The service reported the following metadata:</Typography>
-          <code>{ref}</code>
+          <code className='text-sm block font-light tracking-tight mb-6 px-6 py-2 rounded bg-l1-light/20 dark:bg-l1-dark/20 border border-l1-light dark:border-l1-dark'>
+            {ref}
+          </code>
         </>
       )}
+      <Typography variant='body'>
+        <small>{ets}</small>
+      </Typography>
     </section>
   );
 }

@@ -1,71 +1,51 @@
 'use client';
 import { motion } from 'framer-motion';
-import { projects } from '@/data/projects';
 import { Typography } from '@/components/Typography';
-import { ProjectCard } from '@/components/ProjectCard';
+import { LinkButton } from '@/components/LinkButton';
 import { ExternalLink } from '@/components/ExternalLink';
+import { GitHub } from '@/components/icons/GitHub';
+import { LinkedIn } from '@/components/icons/LinkedIn';
 
 export default function Home() {
   return (
-    <>
-      <section>
-        <motion.div
-          initial={{ opacity: 0, y: 14 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4, delay: 0 }}
-        >
-          <Typography variant='h2'>Hello</Typography>
-          <Typography variant='body'>
-            I&apos;m an Associate Software Engineer, currently working at{' '}
-            <ExternalLink href='https://www.os.uk' message='Ordnance Survey' />.
-          </Typography>
-        </motion.div>
-        <motion.div
-          initial={{ opacity: 0, y: 14 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4, delay: 0.1 }}
-        >
-          <Typography variant='body'>
-            I&apos;m interested in crafting{' '}
-            <ExternalLink href='https://react.dev' message='React' />
-            -based web applications, exploring new geospatial technologies, and developing APIs or
-            other backend things. Currently deploying to{' '}
-            <ExternalLink href='https://azure.com' message='Azure' />,{' '}
-            <ExternalLink href='https://cloudflare.com' message='Cloudflare' />, and with{' '}
-            <ExternalLink href='https://docker.com' message='Docker' /> directly on my homelab.
-          </Typography>
-        </motion.div>
-        <motion.div
-          initial={{ opacity: 0, y: 14 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4, delay: 0.2 }}
-        >
-          <Typography variant='body'>
-            Away from the desk, I love cooking and exploring new places. I have a BSc in Geography
-            from{' '}
-            <ExternalLink
-              href='https://www.durham.ac.uk/departments/academic/geography/'
-              message='Durham University'
-            />{' '}
-            where I specialised in GIS, climate change, and Glaciology.
-          </Typography>
-        </motion.div>
-      </section>
+    <motion.div
+      initial={{ opacity: 0, y: 14 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.4, delay: 0.2 }}
+    >
+      <Typography variant='body'>
+        Hey there! I&apos;m an Associate Software Engineer based in the UK and currently working for{' '}
+        <ExternalLink href='https://www.os.uk' message='Ordnance Survey' />.
+      </Typography>
 
-      <section>
-        <motion.div
-          initial={{ opacity: 0, y: 14 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4, delay: 0.4 }}
-        >
-          <Typography variant='h2'>Recently</Typography>
-          <div className='py-2 grid gap-4 md:gap-6 grid-cols-1 sm:grid-cols-2'>
-            {projects.map((project) => (
-              <ProjectCard key={project.href} {...project} />
-            ))}
-          </div>
-        </motion.div>
-      </section>
-    </>
+      <Typography variant='body'>
+        My areas of specialism include building{' '}
+        <ExternalLink href='https://react.dev' message='React' /> frontends with various styling
+        libraries (e.g. <ExternalLink href='https://tailwindcss.com' message='Tailwind' />,{' '}
+        <ExternalLink href='https://emotion.sh' message='Emotion' />,{' '}
+        <ExternalLink href='https://mui.com' message='MUI' />) and prototyping APIs (e.g.{' '}
+        <ExternalLink href='https://hono.dev' message='Hono' />,{' '}
+        <ExternalLink href='https://mongodb.com' message='MongoDB' />,{' '}
+        <ExternalLink href='https://docker.com' message='Docker' />
+        ), both with a focus on geospatial. I&apos;m currently deploying to{' '}
+        <ExternalLink href='https://azure.com' message='Azure' />,{' '}
+        <ExternalLink href='https://render.com' message='Render' />,{' '}
+        <ExternalLink href='https://cloudflare.com' message='Cloudflare' />, and with{' '}
+        <ExternalLink href='https://docker.com' message='Docker' /> on my homelab.
+      </Typography>
+
+      <Typography variant='body'>
+        Away from the desk, I love cooking and adventuring to new places 🌄.
+      </Typography>
+
+      <nav className='mt-6 flex items-center gap-4'>
+        <LinkButton
+          href='https://linkedin.com/in/archiebiddiscombe'
+          icon={<LinkedIn />}
+          label='LinkedIn'
+        />
+        <LinkButton href='https://github.com/abiddiscombe' icon={<GitHub />} label='GitHub' />
+      </nav>
+    </motion.div>
   );
 }

@@ -1,8 +1,8 @@
 import './globals.css';
+import { GeistSans } from 'geist/font/sans';
+import { GeistMono } from 'geist/font/mono';
 import type { Metadata } from 'next';
-import { Header } from '@/components/blocks/Header';
-import { Main } from '@/components/blocks/Main';
-import { Nav } from '@/components/blocks/Nav';
+import { Header } from '@/components/Header';
 
 export const metadata: Metadata = {
   title: 'Archie Biddiscombe',
@@ -16,7 +16,7 @@ interface RootLayoutProps {
 
 export default function RootLayout(p: RootLayoutProps) {
   return (
-    <html lang='en'>
+    <html lang='en' className={`${GeistSans.variable} ${GeistMono.variable}`}>
       <head>
         <meta property='og:type' content='website' />
         <meta property='og:url' content='https://abiddiscombe.dev/' />
@@ -27,10 +27,11 @@ export default function RootLayout(p: RootLayoutProps) {
         <link rel='icon' type='image/png' sizes='16x16' href='./favicon/favicon-16x16.png' />
       </head>
 
-      <body>
-        <Nav />
-        <Header />
-        <Main outlet={p.children} />
+      <body className='p-6 pt-10 h-screen sm:grid sm:place-items-center'>
+        <main className='max-w-xl'>
+          <Header />
+          {p.children}
+        </main>
       </body>
     </html>
   );
